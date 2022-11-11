@@ -1,0 +1,44 @@
+ul {
+  counter-reset: list;
+}
+ol {
+  counter-reset: list;
+}
+.listBracket,
+.listDot,
+.listSublist {
+  list-style: none;
+  display: block;
+}
+.listBracket:before {
+  content: counter(list) ") ";
+  counter-increment: list;
+  font-weight: bold;
+}
+.listDot:before {
+  content: counter(list) " ";
+  counter-increment: list;
+  font-weight: bold;
+}
+.listSublist:before {
+  content: counters(list, ".") " ";
+  counter-increment: list;
+  font-weight: bold;
+}
+.imageInfo {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+.noBullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  & > li {
+    margin-bottom: 5px;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}

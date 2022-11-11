@@ -1,0 +1,13 @@
+
+.preCodeStyle {
+    background-color: black;
+    color: white;
+    overflow: auto;
+    max-width: 100%;
+    & > code {
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;  
+    }
+}

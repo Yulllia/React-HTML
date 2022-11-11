@@ -1,6 +1,7 @@
+import { DocHtml } from 'components/html-documentation/DocHtml';
 import React from 'react';
 import './App.css';
-import DocHtml from './html-documentation/DocHtml';
+
 
 function App() {
   return (

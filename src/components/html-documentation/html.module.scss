@@ -1,0 +1,33 @@
+.title {
+  text-align: center;
+}
+.contentBlock {
+  padding: 0 20px 0 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  .userName {
+    color: blueviolet;
+  }
+  .imageInfo {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
+  .colorLink {
+    color: blue;
+  }
+  .tagColor {
+    color: red;
+    &:last-child {
+      .comaSeparator {
+        display: none;
+      }
+    }
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .comaSeparator {
+    color: black;
+  }
+}
